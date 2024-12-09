@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SignUp_Login</string>
+    <string name="hydrateme">HydrateMe</string>
+    <string name="nol">0</string>
+    <string name="ml">ml</string>
+    <string name="intake">Your Daily Intake</string>
+</resources>

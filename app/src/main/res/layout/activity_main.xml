@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgwhite"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bgfooter"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="379dp"
+        android:gravity="center"
+        android:text="@string/nol"
+        android:textColor="@color/black"
+        android:textSize="180dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_above="@+id/bgfooter"
+        android:layout_marginBottom="380dp"
+        android:gravity="center"
+        android:text="@string/intake"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/bgfooter"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/bgfooter" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bgfooter"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/vectormuda" />
+
+    <ImageView
+        android:id="@+id/vecombaktua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bgfooter"
+        android:layout_marginBottom="0dp"
+        app:srcCompat="@drawable/vectortua" />
+
+    <Button
+        android:id="@+id/minum"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="754dp"
+        android:layout_marginEnd="88dp"
+        android:backgroundTint="@color/white"
+        android:text="+ MINUM"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

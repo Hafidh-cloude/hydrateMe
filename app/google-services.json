@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "172649231134",
+    "firebase_url": "https://loginandsignup01-default-rtdb.firebaseio.com",
+    "project_id": "loginandsignup01",
+    "storage_bucket": "loginandsignup01.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:172649231134:android:c0583a9a3e9425400f4f0f",
+        "android_client_info": {
+          "package_name": "com.example.loginandsignup"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRHpIw8HeKLrYKg2Qck-PTPR6bNt2UvP4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:172649231134:android:8d5be25da9b76f8c0f4f0f",
+        "android_client_info": {
+          "package_name": "com.example.signup_login"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRHpIw8HeKLrYKg2Qck-PTPR6bNt2UvP4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
