@@ -1,29 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bgwhite"
     tools:context=".MainActivity">
 
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp">
+
+    </FrameLayout>
+
+
+
+    <TextView
+        android:id="@+id/intake_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="190dp"
+        android:text="0 ml / 230 ml"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:text="Your Daily Intake"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+<!--    <ImageView-->
+<!--        android:id="@+id/profile_icon"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:layout_marginEnd="4dp"-->
+<!--        android:background="@drawable/profile" />-->
+
     <!-- Progress Bar -->
+
+    <!-- Tombol untuk menambah progres -->
+
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:rotation="270"
-        android:progressDrawable="@drawable/custom_progress_bg"
         android:max="100"
-        android:progress="0" />
+        android:progress="0"
+        android:progressDrawable="@drawable/custom_progress_bg"
+        android:rotation="270"
+        android:scaleY="1.5" />
 
-    <!-- Tombol untuk menambah progres -->
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="187dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="510dp"
+        android:layout_marginBottom="145dp"
+        app:srcCompat="@drawable/ombakmuda" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="444dp"
+        android:layout_alignBottom="@+id/intake_spinner"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="410dp"
+        android:layout_marginBottom="-189dp"
+        app:srcCompat="@drawable/ombaktua" />
+
+    <Spinner
+        android:id="@+id/intake_spinner"
+        android:layout_width="132dp"
+        android:layout_height="43dp"
+        android:outlineAmbientShadowColor="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="611dp"
+        android:entries="@array/intake_options" />
+
     <Button
         android:id="@+id/start_progress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="16dp"
-        android:text="+ Minum"
-        android:textAllCaps="false" />
+        android:layout_margin="136dp"
+        android:layout_marginStart="271dp"
+        android:layout_marginEnd="271dp"
+        android:layout_marginBottom="850dp"
+        android:backgroundTint="@color/white"
+        android:text="+ MINUM"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:textSize="18sp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        app:menu="@menu/button_nav_menu" />
+
 </RelativeLayout>
+<!--    android:layout_alignParentStart="true"-->
+<!--    android:layout_alignParentEnd="true"-->
+<!--    android:layout_alignParentBottom="true"-->

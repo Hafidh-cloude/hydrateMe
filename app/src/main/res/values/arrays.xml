@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="intake_options">
+        <item>100 ml</item>
+        <item>150 ml</item>
+        <item>200 ml</item>
+    </string-array>
+</resources>

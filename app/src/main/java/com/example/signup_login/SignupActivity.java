@@ -15,7 +15,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class SignupActivity extends AppCompatActivity {
 
-    EditText signupName, signupUsername, signupEmail, signupPassword;
+    EditText signupName, signupUsername, beratBadan, signupPassword;
     TextView loginRedirectText;
     Button signupButton;
     FirebaseDatabase database;
@@ -27,7 +27,7 @@ public class SignupActivity extends AppCompatActivity {
         setContentView(R.layout.activity_signup);
 
         signupName = findViewById(R.id.signup_name);
-        signupEmail = findViewById(R.id.signup_email);
+        beratBadan = findViewById(R.id.signup_email);
         signupUsername = findViewById(R.id.signup_username);
         signupPassword = findViewById(R.id.signup_password);
         loginRedirectText = findViewById(R.id.loginRedirectText);
@@ -41,7 +41,7 @@ public class SignupActivity extends AppCompatActivity {
                 reference = database.getReference("users");
 
                 String name = signupName.getText().toString();
-                String email = signupEmail.getText().toString();
+                String email = beratBadan.getText().toString();
                 String username = signupUsername.getText().toString();
                 String password = signupPassword.getText().toString();
 
